@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pageview/multiple_card_flow/place.dart';
-
 import 'city_widget.dart';
 import 'review_widget.dart';
 
@@ -11,7 +10,7 @@ class CityItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final titleStyle = TextStyle(
+    const titleStyle = TextStyle(
         color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24.0);
     final subtitleStyle = TextStyle(
         color: Colors.grey[400], fontWeight: FontWeight.w600, fontSize: 17.0);

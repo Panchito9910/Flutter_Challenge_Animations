@@ -1,12 +1,12 @@
 import "package:flutter/material.dart";
-import "package:pageview/multiple_card_flow/city_widget.dart";
+import 'package:pageview/multiple_card_flow/widgets/city_widget.dart';
 import "package:pageview/multiple_card_flow/multiple_card_flow.dart";
 import "package:pageview/multiple_card_flow/place.dart";
-import "package:pageview/multiple_card_flow/review_widget.dart";
+import 'package:pageview/multiple_card_flow/widgets/review_widget.dart';
 
 class MultipleCardFlowDetails extends StatelessWidget {
   final City city;
-  final titleStyle = TextStyle(
+  final titleStyle = const TextStyle(
       color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24.0);
   final subtitleStyle = TextStyle(
       color: Colors.grey[400], fontWeight: FontWeight.w600, fontSize: 17.0);

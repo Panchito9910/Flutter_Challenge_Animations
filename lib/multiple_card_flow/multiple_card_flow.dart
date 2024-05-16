@@ -2,9 +2,10 @@ import "package:flutter/material.dart";
 import "package:flutter/rendering.dart";
 import "package:pageview/multiple_card_flow/multiple_card_flow_details.dart";
 import "package:pageview/multiple_card_flow/place.dart";
+// ignore: depend_on_referenced_packages
 import "package:vector_math/vector_math_64.dart" as vector;
-import "city_item_widget.dart";
-import "search_widget.dart";
+import 'widgets/city_item_widget.dart';
+import 'widgets/search_widget.dart';
 
 const backgroundGradient = LinearGradient(
     begin: Alignment.topCenter,
@@ -27,7 +28,6 @@ class _MultipleCardFlowState extends State<MultipleCardFlow>
   double? page = 0.0;
   @override
   void initState() {
-    // TODO: implement initState
     _pageController.addListener(listenScroll);
     _animationController = AnimationController(
         vsync: this,
@@ -38,7 +38,6 @@ class _MultipleCardFlowState extends State<MultipleCardFlow>
 
   @override
   void dispose() {
-    // TODO: implement dispose
     _animationController?.dispose();
     _pageController.removeListener(listenScroll);
     _pageController.dispose();

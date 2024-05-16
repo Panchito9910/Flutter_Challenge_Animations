@@ -9,7 +9,6 @@ class CityWidget extends StatelessWidget {
     required this.subtitleStyle,
     this.padding = EdgeInsets.zero,
   });
-
   final City city;
   final TextStyle titleStyle;
   final TextStyle subtitleStyle;
